@@ -49,7 +49,7 @@ function adamdehaven_buttons() {
     add_filter('mce_buttons', 'adamdehaven_register_buttons');
 }	
 function adamdehaven_add_buttons($plugin_array) {
-	$plugin_array['adamdehaven'] = plugins_url( '/pullquote-shortcode.js', __FILE__ );
+	$plugin_array['adamdehaven_perfect_pullquotes'] = plugins_url( '/pullquote-shortcode.js', __FILE__ );
 	return $plugin_array;
 }
 function adamdehaven_register_buttons($buttons) {

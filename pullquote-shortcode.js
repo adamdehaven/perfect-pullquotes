@@ -10,7 +10,7 @@
  * ======================================
 */
 (function() {
-    tinymce.create('tinymce.plugins.AdamDehaven', {
+    tinymce.create('tinymce.plugins.AdamDehavenPerfectPullquotes', {
         /**
          * Initializes the plugin, this will be executed after the plugin has been created.
          * This call is done before the editor instance has finished it's initialization so use the onInit event
@@ -80,5 +80,5 @@
     });
 
     // Register plugin
-    tinymce.PluginManager.add('adamdehaven', tinymce.plugins.AdamDehaven);
+    tinymce.PluginManager.add('adamdehaven_perfect_pullquotes', tinymce.plugins.AdamDehavenPerfectPullquotes);
 })();
