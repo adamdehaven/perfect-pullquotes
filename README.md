@@ -1,4 +1,4 @@
-# Pullquote Plugin
+# Perfect Pullquotes
 
 A Wordpress plugin to add left or right-aligned beautifully styled pullquotes. Also includes two custom buttons for the TinyMCE Editor as well as a custom shortcode.
 
