@@ -1,0 +1,72 @@
+/* ======================================
+ * https://github.com/adamdehaven/perfect-pullquotes
+ * version 1.0
+ *
+ * Adam Dehaven ( @adamdehaven )
+ * http://adamdehaven.com/
+ *
+ * pullquote.css
+ *
+ * ======================================
+*/
+
+.pullquote blockquote, .pullquote blockquote p { /* Reset <blockquote> element */
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    text-align: left;
+    vertical-align:baseline;
+    background:transparent;
+    quotes:none;
+}
+
+.pullquote blockquote:before, blockquote:after { /* Reset <blockquote> element */
+    content:'';
+    content:none;
+}
+
+.pullquote {
+    color:#363636;
+    font-size:21px;
+    line-height: 1.5;
+    display: block;
+    width: 30%;
+    padding: 0.5em 1em;
+    margin: 24px 0px;
+}
+
+.pullquote blockquote p {
+    color:#363636;
+    font-size:21px;
+    line-height: 1.5;
+}
+
+.pullquote-align-left {
+    text-align: left;
+    margin: 0.5em 1.5em 1em 0;
+    padding-left: 0;
+    float: left;
+    border-right: 5px solid #eeeeee;
+}
+
+.pullquote-align-right {
+    text-align: left;
+    margin: 0.5em 0 1em 1.5em;
+    padding-right: 0;
+    float: right;
+    border-left: 5px solid #eeeeee;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .pullquote {
+        width:50% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pullquote {
+        width:100% !important;
+    }
+}
