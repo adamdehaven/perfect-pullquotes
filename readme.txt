@@ -3,9 +3,7 @@ Perfect Pullquotes
 A Wordpress plugin to add left or right-aligned beautifully styled pullquotes. Also includes two custom buttons for the TinyMCE Editor as well as a custom shortcode.
 
 INSTALLATION
-Download the plugin and install the plugin via your Wordpress Dashboard. ( Plugins > Add New > Upload Plugin )
-
-To change the default color of the pullquote’s border, edit lines 51 and 59 of the pullquote.css file by changing the HEX value of the border-color attribute, or simply utilize the “color” option included within the shortcode (details below).
+Download the plugin. To change the default color of the pullquote’s border, edit lines 51 and 59 of the pullquote.css file by changing the HEX value of the border-color attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode (details below). Upload the compressed perfect-pullquotes.zip plugin file via your Wordpress Dashboard. Plugins > Add New > Upload Plugin
 
 Once installed, the plugin will add two Pullquote buttons to the Visual Editor (TinyMCE) within your Wordpress installation.
 
