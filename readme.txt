@@ -21,22 +21,16 @@ The default shortcode tag is shown here
 = Options =
 The shortcode includes three options, (align, color, and class) as outlined below:
 
-**align="left"** | _Required_  
-
-Determines whether pullquote is left or right aligned. Accepts "left" or "right"
+= `align="left"` =
+**REQUIRED**: Determines whether pullquote is left or right aligned. Accepts "left" or "right"
 `[pullquote align="left"][/pullquote]`  
 
-***
-
-**color="#EEEEEE"** | _Optional_  
-
-Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.
+= `color="#EEEEEE"` =
+**Optional**: Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.
 `[pullquote align="left" color="#16989D"][/pullquote]`  
 
-***
-
-**class="className"** | __Optional__
-Add class(es) to pullquote container.
+= `class="className"` =
+**Optional**: Add class(es) to pullquote container.
 `[pullquote align ="right" class="firstClass secondClass"][/pullquote]`
 
 == Installation ==
