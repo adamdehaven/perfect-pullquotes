@@ -2,7 +2,7 @@
 /*
 Plugin Name: Perfect Pullquotes
 Plugin URI: http://github.com/adamdehaven/perfect-pullquotes
-Description: A Wordpress theme plugin to add left or right-aligned pullquotes. Also includes two custom buttons for the TinyMCE Editor
+Description: Add left or right-aligned, beautifully styled pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
 Author: Adam Dehaven
 Version: 1.0
 Author URI: http://adamdehaven.com
