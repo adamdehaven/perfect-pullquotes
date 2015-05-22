@@ -19,38 +19,41 @@ The default shortcode tag is shown here
 <pre>[pullquote align="left" color="" class=""]This is the pullquote text.[/pullquote]</pre>
 
 = Options =
-The shortcode includes three options, as outlined below.
+The shortcode includes three options, (align, color, and class) as outlined below:
 
-**align="left|right"**
-Determines whether pullquote is left or right aligned. **Required**
-<code>[pullquote align="left"][/pullquote]</code>
-
-**color="#EEEEEE"**
-Change the default <code>border-color</code> attribute by entering a valid HEX color, including the pound ( # ) sign. **Optional**
-<code>[pullquote align="left" color="#16989D"][/pullquote]</code>
-
-**class="className"**
-Add class(es) to pullquote container. **Optional**
-<code>[pullquote align ="right" class="firstClass secondClass"][/pullquote]</code>
+`align="left|right"`
+Determines whether pullquote is left or right aligned.  
+**Required**  
+`[pullquote align="left"][/pullquote]`
+=====
+`color="#EEEEEE"`
+Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.  
+**Optional**  
+`[pullquote align="left" color="#16989D"][/pullquote]`
+=====
+`class="className"`
+Add class(es) to pullquote container.  
+**Optional**  
+`[pullquote align ="right" class="firstClass secondClass"][/pullquote]`
 
 == Installation ==
 
-Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border, edit lines <code>51</code> and <code>59</code> of the <code>pullquote.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode (details below). 
+Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border before installing, edit lines `51` and `59` of the `pullquote.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode. 
 
-1. Upload the compressed <code>perfect-pullquotes.zip</code> plugin file via your Wordpress Dashboard: <code>Plugins > Add New > Upload Plugin</code>, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
+1. Upload the compressed `perfect-pullquotes.zip` plugin file via your Wordpress Dashboard: `Plugins > Add New > Upload Plugin`, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Once installed, the plugin will add two Pullquote buttons to the Visual Editor (TinyMCE) within your Wordpress installation.
+Once installed, the plugin will add two Pullquote buttons to the Visual Editor (TinyMCE) within your Wordpress installation as well as enable the `[pullquote/]` shortcode.
 
 == Frequently Asked Questions ==
 
 = How can I change the color of the pullquote's border? =
 
-To change the default color of the pullquote’s border, before uploading the plugin, edit lines <code>51</code> and <code>59</code> of the <code>pullquote.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.
+To change the default color of the pullquote’s border, before uploading the plugin, edit lines `51` and `59` of the `pullquote.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.
 
 = How can I add additional classes to the pullquote's container? =
 
-Simply utilize the "class" option on the shortcode tag. <code>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</code>
+Simply utilize the "class" option on the shortcode tag. `[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]`
 
 == Screenshots ==
 
