@@ -21,17 +21,17 @@ The default shortcode tag is shown here
 = Options =
 The shortcode includes three options, as outlined below.
 
-Option | Accepts | Description | Example
---- | --- | --- | ---
-<code>align</code> | <code>left</code> or <code>right</code> | Determines whether pullquote is left or right aligned. **Required** | <code>[pullquote align="left"][/pullquote]</code>
-<code>color</code> | [HEX](http://www.colorhexa.com/) color code | Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd> | <code>[pullquote align="left" color="#16989D"][/pullquote]</code>
-<code>class</code> | text | Add class(es) to pullquote container. **Optional** | <code>[pullquote align ="right" class="cited author-quote"][/pullquote]</code>
+**align="left|right"**
+Determines whether pullquote is left or right aligned. **Required**
+<code>[pullquote align="left"][/pullquote]</code>
 
-= Examples =
+**color="#EEEEEE"**
+Change the default <code>border-color</code> attribute by entering a valid HEX color, including the pound ( # ) sign. **Optional**
+<code>[pullquote align="left" color="#16989D"][/pullquote]</code>
 
-Below are a series of paragraphs (filler text) with pullquotes inserted:
-
-![Sample pullquotes](/assets/pullquote-examples.png)
+**class="className"**
+Add class(es) to pullquote container. **Optional**
+<code>[pullquote align ="right" class="firstClass secondClass"][/pullquote]</code>
 
 == Installation ==
 
@@ -47,6 +47,10 @@ Once installed, the plugin will add two Pullquote buttons to the Visual Editor (
 = How can I change the color of the pullquote's border? =
 
 To change the default color of the pullquote’s border, before uploading the plugin, edit lines <code>51</code> and <code>59</code> of the <code>pullquote.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.
+
+= How can I add additional classes to the pullquote's container? =
+
+Simply utilize the "class" option on the shortcode tag. <code>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</code>
 
 == Screenshots ==
 
