@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 4.2.2
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: https://github.com/adamdehaven/perfect-pullquotes/blob/master/LICENSE
 
