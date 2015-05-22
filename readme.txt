@@ -25,12 +25,12 @@ The shortcode includes three options, (align, color, and class) as outlined belo
 Determines whether pullquote is left or right aligned.  
 **Required**  
 `[pullquote align="left"][/pullquote]`
-=====
+---
 `color="#EEEEEE"`
 Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.  
 **Optional**  
 `[pullquote align="left" color="#16989D"][/pullquote]`
-=====
+---
 `class="className"`
 Add class(es) to pullquote container.  
 **Optional**  
