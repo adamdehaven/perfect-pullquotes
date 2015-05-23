@@ -1,5 +1,5 @@
 === Perfect Pullquotes ===
-Contributors: abdehaven@gmail.com
+Contributors: @adamdehaven
 Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
