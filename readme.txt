@@ -59,10 +59,13 @@ Simply utilize the "class" option on the shortcode tag. `[pullquote align="left"
 
 == Changelog ==
 
+= 1.0.1 =
+* Minor update for performance improvements.
+
 = 1.0 =
-* Initial release
+* Initial release.
 
 == Upgrade Notice ==
 
-= 1.0 =
-Initial release.
+= 1.0.1 =
+Minor update for performance improvements.
