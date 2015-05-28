@@ -4,7 +4,7 @@ Plugin Name: Perfect Pullquotes
 Plugin URI: http://github.com/adamdehaven/perfect-pullquotes
 Description: Add left or right-aligned, beautifully styled pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
 Author: Adam Dehaven
-Version: 1.0
+Version: 1.0.1
 Author URI: http://adamdehaven.com
 */
 add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
