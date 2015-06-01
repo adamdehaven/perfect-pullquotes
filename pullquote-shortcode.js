@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.0.1
+ * version 1.0.2
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -24,7 +24,7 @@
             ed.addCommand('pullquote-left', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="left" color="" class=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]';
+                return_text = '[pullquote align="left" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Left-Aligned Pullquote Button
@@ -37,7 +37,7 @@
             ed.addCommand('pullquote-right', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="right" color="" class=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]';
+                return_text = '[pullquote align="right" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote Button
