@@ -34,11 +34,11 @@ The shortcode includes three options, (align, color, and class) as outlined belo
 `[pullquote align ="right" class="firstClass secondClass"][/pullquote]`
 
 = cite="Jane Doe" =
-**Optional**: Cite your quotes back to their author/originator
+**Optional**: Cite your quotes back to their author/source
 `[pullquote align ="right" cite="Jane Doe"][/pullquote]`
 
 = link="http://example.com" =
-**Optional**: Turn the cited author's name into a link that opens in a new window. Must begin with `http` or `https`
+**Optional**: Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with `http` or `https`
 `[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]`
 
 == Installation ==
