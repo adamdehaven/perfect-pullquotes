@@ -4,14 +4,14 @@ Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://github.com/adamdehaven/perfect-pullquotes/blob/master/LICENSE
 
-Add left or right-aligned, beautifully styled pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
+Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
 
 == Description ==
-Add left or right-aligned, beautifully styled pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
+Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
 
 The plugin enables a [Wordpress shortcode](https://codex.wordpress.org/Shortcode_API) that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then clicking either of the Pullquote buttons (one for left-aligned, the other for right-aligned).
 
@@ -22,7 +22,7 @@ The default shortcode tag is shown here
 The shortcode includes three options, (align, color, and class) as outlined below:
 
 = align="left" =
-**REQUIRED**: Determines whether pullquote is left or right aligned. Accepts "left" or "right"
+**REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (100% width of container). Accepts "left", "right", or "full"
 `[pullquote align="left"][/pullquote]`  
 
 = color="#EEEEEE" =
@@ -74,6 +74,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 2. An example of a left-aligned and right-aligned pullquote. Your pullquotes will vary depending on your font settings, color choices, etc.
 
 == Changelog ==
+
+= 1.1.1 =
+* Adds support for full-width <code>width:100%</code> quotes. Utilize by specifying align="full" on shortcode.
 
 = 1.1 =
 * Fixes "Plugin does not have a valid header" error.

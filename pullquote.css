@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.1
+ * version 1.1.1
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -50,6 +50,10 @@
     margin: 24px 0px;
 }
 
+.pullquote.pullquote-align-full {
+    width:100%;
+}
+
 .pullquote blockquote p {
     color:#363636;
     font-size:21px;
@@ -72,9 +76,20 @@
     border-left: 5px solid #eeeeee;
 }
 
+.pullquote-align-full {
+    text-align: left;
+    margin: 0.5em 0 1em 1.5em;
+    padding-right: 0;
+    float: none;
+    border-left: 5px solid #eeeeee;
+}
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
     .pullquote {
         width:50% !important;
+    }
+    .pullquote.pullquote-align-full {
+        width:1000% !important;
     }
 }
 

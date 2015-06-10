@@ -2,8 +2,8 @@
 /*
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://github.com/adamdehaven/perfect-pullquotes
-Description: Add left or right-aligned, beautifully styled pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
-Version:     1.1
+Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Also includes two custom buttons for the TinyMCE Editor as well as a custom shortcode.
+Version:     1.1.1
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com
 License:     GPL2
@@ -34,16 +34,19 @@ function adamdehaven_pullquote_styles()
 add_shortcode( 'pullquote', 'adamdehaven_pullquote' );
 function adamdehaven_pullquote( $atts, $content = null ) {
 	$a = shortcode_atts( array(
-        'align' => 'left', // Align pullquote to the left or right. Default left.
+        'align' => 'left', // Align pullquote to the left, right, or full (for width:100%). Default left.
         'color' => null, // Provide the HEX value of the border-color. Default #EEEEEE
         'class' => null, // Add additional classes to the div.pullquote object
         'cite'	=> null, // Add the name/source of the quote
         'link'	=> null, // Add a link to the cited source, must be http or https link
         ), $atts );
 
-	// Pullquote alignment (left or right)
+	// Pullquote alignment (left, right, or full)
 	$alignment = '';
 	switch ( $a['align'] ) {
+        case 'full':
+            $alignment = 'pullquote-align-full';
+            break;
 		case 'right':
 			$alignment = 'pullquote-align-right';
 			break;
