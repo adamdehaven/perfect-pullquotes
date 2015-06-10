@@ -21,7 +21,7 @@ The shortcode includes three options, as outlined below.
 
 Option | Accepts | Description | Example
 --- | --- | --- | ---
-<code>align</code> | <code>left</code>, <code>right</code>, or <code>full</code> | Determines whether pullquote is left-aligned, right-aligned, or full-width. **Required** | <code>[pullquote align="left"][/pullquote]</code>
+<code>align</code> | <code>left</code> <code>right</code> <code>full</code> | Determines whether pullquote is left-aligned, right-aligned, or full-width. **Required** | <code>[pullquote align="left"][/pullquote]</code>
 <code>color</code> | [HEX](http://www.colorhexa.com/) color code | Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd> | <code>[pullquote align="left" color="#16989D"][/pullquote]</code>
 <code>class</code> | text | Add class(es) to pullquote container. **Optional** | <code>[pullquote align ="right" class="cited author-quote"][/pullquote]</code>
 <code>cite</code> | text | Cite your quotes back to their author/source. **Optional** | <code>[pullquote align ="right" cite="Jane Doe"][/pullquote]</code>
