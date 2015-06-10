@@ -75,6 +75,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
+= 1.1.2 =
+* Adds support for full-width <code>width:100%</code> quotes. Utilize by specifying align="full" on shortcode. Update to docs and plugin URL.
+
 = 1.1.1 =
 * Adds support for full-width <code>width:100%</code> quotes. Utilize by specifying align="full" on shortcode.
 
