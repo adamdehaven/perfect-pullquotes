@@ -1,17 +1,32 @@
 <?php
 /*
 Plugin Name: Perfect Pullquotes
-Plugin URI: http://github.com/adamdehaven/perfect-pullquotes
+Plugin URI:  http://github.com/adamdehaven/perfect-pullquotes
 Description: Add left or right-aligned, beautifully styled pullquotes. Includes two custom buttons for the Visual Editor as well as a custom shortcode.
-Version: 1.0.2
-Author: Adam Dehaven
-Author URI: http://adamdehaven.com
+Version:     1.1
+Author:      Adam Dehaven
+Author URI:  http://adamdehaven.com
+License:     GPL2
+
+Perfect Pullquotes is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+any later version.
+ 
+Perfect Pullquotes is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+ 
+You should have received a copy of the GNU General Public License
+along with Perfect Pullquotes. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
+
 add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
 function adamdehaven_pullquote_styles()
 {
     // Register the style like this for a plugin:
-    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/pullquote.css', __FILE__ ), array(), '1.0.2', 'all' ); 
+    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/pullquote.css', __FILE__ ), array(), '1.1', 'all' ); 
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'perfect-pullquotes-styles' );
 }
@@ -83,5 +98,3 @@ function adamdehaven_register_buttons($buttons) {
 	array_push( $buttons, 'pullquote-left', 'pullquote-right' );
 	return $buttons;
 }
-
-?>
