@@ -1,11 +1,11 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.3
+ * version 1.4
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
  *
- * pullquote-shortcode.js
+ * perfect-pullquotes.js
  *
  * ======================================
 */

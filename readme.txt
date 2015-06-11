@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpr
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,7 +43,7 @@ The shortcode includes five options, (align, color, and class) as outlined below
 
 == Installation ==
 
-Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border before installing, edit lines `51` and `59` of the `perfect-pullquotes.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode. 
+Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border before installing, edit lines `67`, `75`, and `83` of the `perfect-pullquotes.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode. 
 
 1. Upload the compressed `perfect-pullquotes.zip` plugin file via your Wordpress Dashboard: `Plugins > Add New > Upload Plugin`, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
 2. Activate the plugin through the 'Plugins' menu in WordPress
@@ -75,7 +75,7 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
-= 1.3 =
+= 1.4 =
 * Fixes issue where empty `cite=""` attribute causes an empty footer element.
 * Properly spaces pullquote without corrupting surrounding paragraph `<p>` tags.
 * Replaces 2 separate pullquote buttons in editor with one menu button dropdown allowing the selection of adding a left-aligned, right-aligned, or full-width pullquote.
@@ -106,7 +106,7 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Upgrade Notice ==
 
-= 1.3 =
+= 1.4 =
 Update now for an enhanced Pullquote button, to resolve the invalid header notice, and to correct pullquote spacing.
 
 = 1.0.1 =
