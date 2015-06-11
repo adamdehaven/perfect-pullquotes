@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: https://github.com/adamdehaven/perfect-pullquotes/blob/master/LICENSE
 
@@ -74,6 +74,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 2. An example of a left-aligned and right-aligned pullquote. Your pullquotes will vary depending on your font settings, color choices, etc.
 
 == Changelog ==
+
+= 1.1.4 =
+* Added schema.org tags and microformats.org tags
 
 = 1.1.3 =
 * CSS fix for full-width quote.

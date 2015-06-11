@@ -3,7 +3,7 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Also includes two custom buttons for the TinyMCE Editor as well as a custom shortcode.
-Version:     1.1.3
+Version:     1.1.4
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com
 License:     GPL2
@@ -64,28 +64,30 @@ function adamdehaven_pullquote( $atts, $content = null ) {
 
     // Check for cite
     if ( isset($a['cite']) ):
-    	$citeText = strip_tags( $a['cite'] );
+    	$citeText = '<span itemprop="name fn">'.strip_tags( $a['cite'] ).'</span>';
     else:
     	$citeText = null;
     endif;
 
     // Check for link
     if ( isset($a['link']) && preg_match("/(http|https)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/", $a['link']) ):
-    	$citeLink = '<a href="'.$a['link'].'" target="_blank">'.$citeText.'</a>';
+        $citeLink = $a['link'];
+    	$citeLinkWithText = '<a href="'.$a['link'].'" class="url" target="_blank" itemprop="url">'.$citeText.'</a>';
     else:
     	$citeLink = null;
+        $citeLinkWithText = null;
     endif;
 
     // Create footer
     if ($citeLink && $citeText):
-	    $citeFooter = '<footer><cite>'.$citeLink.'</cite></footer>';
+	    $citeFooter = '<footer itemscope itemtype="http://schema.org/Person"><cite>'.$citeLinkWithText.'</cite></footer>';
 	elseif($citeText):
-		$citeFooter = '<footer><cite>'.$citeText.'</cite></footer>';
+		$citeFooter = '<footer itemscope itemtype="http://schema.org/Person"><cite>'.$citeText.'</cite></footer>';
 	else:
 		$citeFooter = null;
 	endif;
 
-    return '<div class="pullquote '.$alignment.' '.esc_attr($a['class']).'"'.$color.'><blockquote><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
+    return '<div class="pullquote '.$alignment.' '.esc_attr($a['class']).' vcard"'.$color.'><blockquote cite="'.$citeLink.'"><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
 }
 
 add_action( 'init', 'adamdehaven_buttons' );
