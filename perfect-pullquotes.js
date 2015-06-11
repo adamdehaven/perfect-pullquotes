@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.1.4
+ * version 1.3
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -24,27 +24,37 @@
             ed.addCommand('pullquote-left', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="left" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]';
+                return_text = '[pullquote align="left" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
-            });
-            // Left-Aligned Pullquote Button
-            ed.addButton('pullquote-left', {
-                title : 'Add left-aligned pullquote',
-                cmd : 'pullquote-left',
-                image : url + '/pullquote-left.png'
             });
             // Right-Aligned Pullquote
             ed.addCommand('pullquote-right', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="right" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]';
+                return_text = '[pullquote align="right" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
-            // Right-Aligned Pullquote Button
-            ed.addButton('pullquote-right', {
-                title : 'Add right-aligned pullquote',
-                cmd : 'pullquote-right',
-                image : url + '/pullquote-right.png'
+            // Right-Aligned Pullquote
+            ed.addCommand('pullquote-full', function() {
+                var selected_text = ed.selection.getContent();
+                var return_text = '';
+                return_text = '[pullquote align="full" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
+                ed.execCommand('mceInsertContent', 0, return_text);
+            });
+            // Pullquote Menu Button http://www.tinymce.com/wiki.php/api4:class.tinymce.ui.MenuButton
+            ed.addButton('pullquote-menu', {
+                type : 'menubutton',
+                border : '1 1 1 1',
+                text : 'Pullquote',
+                tooltip : 'Add a left, right, or full-width pullquote',
+                icon: true,
+                image : url + '/pullquote-left.png',
+                size : 'small',
+                menu : [
+                    {text: 'Left-Aligned', onclick: function() {ed.execCommand('pullquote-left'); }},
+                    {text: 'Right-Aligned', onclick: function() {ed.execCommand('pullquote-right'); }},
+                    {text: 'Full-Width', onclick: function() {ed.execCommand('pullquote-full'); }},
+                ]
             });
         },
 
@@ -70,11 +80,11 @@
          */
         getInfo : function() {
             return {
-                    longname : 'Adam Dehaven Pullquote Shortcode',
+                    longname : 'Perfect Pullquotes',
                     author : 'Adam Dehaven',
                     authorurl : 'http://adamdehaven.com',
-                    infourl : 'http://github.com/adamdehaven/perfect-pullquotes',
-                    version : "1.0"
+                    infourl : 'http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/',
+                    version : "1.2.3"
             };
         }
     });
