@@ -8,7 +8,7 @@ A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or ful
 
 Once installed, the plugin will add a Pullquote dropdown button to the Visual Editor (as seen below) within your Wordpress installation as well as enable the `[pullquote]` shortcode. The actual positioning of the button in your installation may vary.
 
-![Visual Editor preview with Pullquote buttons](editor-screenshot.png)
+![Visual Editor preview with Pullquote buttons](screenshot-1.png)
 
 ## SHORTCODE
 The plugin enables a [Wordpress shortcode](https://codex.wordpress.org/Shortcode_API) that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
@@ -31,4 +31,4 @@ Option | Accepts | Description | Example
 
 Below are a series of paragraphs (filler text) with pullquotes inserted:
 
-![Sample pullquotes](pullquote-examples.png)
+![Sample pullquotes](screenshot-2.png)
