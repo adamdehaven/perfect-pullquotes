@@ -3,7 +3,7 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: Add beautifully styled pullquotes to your Wordpress posts
-Version:     1.4
+Version:     1.4.1
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com/
  */
