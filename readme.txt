@@ -58,15 +58,18 @@ To change the default color of the pullquote’s border, before uploading the pl
 
 = How can I add additional classes to the pullquote's container? =
 
-Simply utilize the "class" option on the shortcode tag. `[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]`
+Simply utilize the "class" option on the shortcode tag. 
+<pre>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</pre>
 
 = How can I add a cite to the quote? =
 
-Simply utilize the "cite" option on the shortcode tag. `[pullquote align="left" cite="Author Name"]Text[/pullquote]`
+Simply utilize the "cite" option on the shortcode tag.
+<pre>[pullquote align="left" cite="Author Name"]Text[/pullquote]</pre>
 
 = Can I link to the cited author's website, online works, etc.? =
 
-Simply utilize the "cite" and "link" options on the shortcode tag. Both options must be present in order to generate a working link `[pullquote align="left" cite="Author Name" link="http://example.com"]Text[/pullquote]`
+Simply utilize the "cite" and "link" options on the shortcode tag. Both options must be present in order to generate a working link.
+<pre>[pullquote align="left" cite="Author Name" link="http://example.com"]Text[/pullquote]</pre>
 
 == Screenshots ==
 
