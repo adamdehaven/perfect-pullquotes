@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpr
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.4.1
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
+= 1.5 =
+* Changed <code>.pullquote</code> class to <code>.perfect-pullquote</code> to alleviate conflicting CSS issues per user requests.
+
 = 1.4.1 =
 * Small CSS fix.
 
@@ -111,6 +114,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.5 =
+Update to resolve common CSS issues.
 
 = 1.4.1 =
 Update adds spacing between quote and source.

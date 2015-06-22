@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.4.1
+ * version 1.5
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -9,41 +9,41 @@
  *
  * ======================================
 */
-.pullquote blockquote, .pullquote blockquote p { /* Reset <blockquote> element */
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    text-align: left;
-    vertical-align:baseline;
-    background:transparent;
-    quotes:none;
+.perfect-pullquote blockquote, .perfect-pullquote blockquote p { /* Reset <blockquote> element */
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    outline:0 !important;
+    font-size:100% !important;
+    text-align: left !important;
+    vertical-align:baseline !important;
+    background:transparent !important;
+    quotes:none !important;
 }
 
-.pullquote blockquote:before, blockquote:after { /* Reset <blockquote> element */
-    content:'';
-    content:none;
+.perfect-pullquote blockquote:before, blockquote:after { /* Reset <blockquote> element */
+    content:'' !important;
+    content:none !important;
 }
 
-.pullquote blockquote footer:before {
+.perfect-pullquote blockquote footer:before {
     content:'\2014 \00A0' !important;
 }
 
-.pullquote blockquote footer {
+.perfect-pullquote blockquote footer {
     margin-top:4px;
 }
 
-.pullquote blockquote footer cite {
+.perfect-pullquote blockquote footer cite {
     font-style: italic;
 }
 
-.pullquote blockquote footer cite a {
+.perfect-pullquote blockquote footer cite a {
     display: inline-block;
     font-style: italic;
 }
 
-.pullquote {
+.perfect-pullquote {
     color:#363636;
     font-size:21px;
     line-height: 1.5;
@@ -53,11 +53,11 @@
     margin: 24px 0px;
 }
 
-.pullquote.pullquote-align-full {
+.perfect-pullquote.pullquote-align-full {
     width:95%;
 }
 
-.pullquote blockquote p {
+.perfect-pullquote blockquote p {
     color:#363636;
     font-size:21px;
     line-height: 1.5;
@@ -88,17 +88,17 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    .pullquote {
+    .perfect-pullquote {
         width:50% !important;
     }
-    .pullquote.pullquote-align-full {
+    .perfect-pullquote.pullquote-align-full {
         margin: 0.5em 0 1em 0.5em;
         width:95% !important;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .pullquote {
+    .perfect-pullquote {
         margin: 0.5em 0 1em 0.5em;
         width:95% !important;
     }
