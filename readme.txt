@@ -79,7 +79,7 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 == Changelog ==
 
 = 1.5 =
-* Changed <code>.pullquote</code> class to <code>.perfect-pullquote</code> to alleviate conflicting CSS issues per user requests.
+* Changed <code>.pullquote</code> class to <code>.perfect-pullquote</code> to alleviate conflicting CSS issues per user requests. Note: After updating, you may see "ugly" pullquotes until you clear the cache in your browser and load the new CSS files from the plugin. If the pullquotes continue to look "broken," simply go into the Wordpress post, make a small change (i.e. add a space to the end of a sentence) and update the post.
 
 = 1.4.1 =
 * Small CSS fix.
