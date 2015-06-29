@@ -63,7 +63,11 @@ function adamdehaven_pullquote( $atts, $content = null ) {
         $color = null;
     endif;
 
-    $styles = ' style="'.$color.$size.'"';
+    if( !is_null($color) || !is_null($color) ):
+        $styles = ' style="'.$color.$size.'"';
+    else:
+        $styles = null;
+    endif;
 
     // Check for cite
     if ( isset($a['cite']) && strlen($a['cite']) > 1 ):
