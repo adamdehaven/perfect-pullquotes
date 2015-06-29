@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.5
+ * version 1.6
  *
  * Adam Dehaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -24,21 +24,21 @@
             ed.addCommand('pullquote-left', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="left" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
+                return_text = '[pullquote align="left" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote
             ed.addCommand('pullquote-right', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="right" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
+                return_text = '[pullquote align="right" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote
             ed.addCommand('pullquote-full', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[pullquote align="full" color="" class="" cite="" link=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
+                return_text = '[pullquote align="full" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/pullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Pullquote Menu Button http://www.tinymce.com/wiki.php/api4:class.tinymce.ui.MenuButton
@@ -84,7 +84,7 @@
                     author : 'Adam Dehaven',
                     authorurl : 'http://adamdehaven.com',
                     infourl : 'http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/',
-                    version : "1.5"
+                    version : "1.6"
             };
         }
     });

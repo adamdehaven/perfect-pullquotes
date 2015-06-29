@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpr
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,14 +16,22 @@ Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. In
 The plugin enables a Wordpress shortcode that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
 
 The default shortcode tag is shown here
-<pre>[pullquote align="left" color="" class="" cite="" link=""]This is the pullquote text.[/pullquote]</pre>
+<pre>[pullquote align="left" class="" cite="" link="" color=""]This is the pullquote text.[/pullquote]</pre>
 
 = Options =
-The shortcode includes five options, (align, color, and class) as outlined below:
+The shortcode includes six options, (align, color, and class) as outlined below:
 
 = align="left" =
 **REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). Accepts "left", "right", or "full"
 <pre>[pullquote align="left"][/pullquote]</pre>
+
+= cite="Jane Doe" =
+**Optional**: Cite your quotes back to their author/source
+<pre>[pullquote align ="right" cite="Jane Doe"][/pullquote]</pre>
+
+= link="http://example.com" =
+**Optional**: Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with `http` or `https`
+<pre>[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]</pre>
 
 = color="#EEEEEE" =
 **Optional**: Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.
@@ -33,13 +41,9 @@ The shortcode includes five options, (align, color, and class) as outlined below
 **Optional**: Add class(es) to pullquote container.
 <pre>[pullquote align ="right" class="firstClass secondClass"][/pullquote]</pre>
 
-= cite="Jane Doe" =
-**Optional**: Cite your quotes back to their author/source
-<pre>[pullquote align ="right" cite="Jane Doe"][/pullquote]</pre>
-
-= link="http://example.com" =
-**Optional**: Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with `http` or `https`
-<pre>[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]</pre>
+= size="21" =
+**Optional**: Change the font size of the pullquote's text, in pixels.
+<pre>[pullquote align ="right" size="32"][/pullquote]</pre>
 
 == Installation ==
 
@@ -61,6 +65,11 @@ To change the default color of the pullquote’s border, before uploading the pl
 Simply utilize the "class" option on the shortcode tag. 
 <pre>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</pre>
 
+= How can I change the font size of the text? =
+
+Simply utilize the "size" option on the shortcode tag by entering the one or two-digit size, in pixels.
+<pre>[pullquote align="left" size="32"]Text[/pullquote]</pre>
+
 = How can I add a cite to the quote? =
 
 Simply utilize the "cite" option on the shortcode tag.
@@ -71,6 +80,10 @@ Simply utilize the "cite" option on the shortcode tag.
 Simply utilize the "cite" and "link" options on the shortcode tag. Both options must be present in order to generate a working link.
 <pre>[pullquote align="left" cite="Author Name" link="http://example.com"]Text[/pullquote]</pre>
 
+= I updated the plugin, but now my pullquotes look weird. Help? =
+
+After updating the plugin, you may see "ugly" pullquotes until you clear the cache in your browser and load the new CSS files from the plugin. Server cache time may vary. If the pullquotes continue to look "broken," simply clear your web brower's cache and refresh the page.
+
 == Screenshots ==
 
 1. This screenshot shows the 'Pullquote' button that will be added to the Visual Editor once installed. The button can be used to insert a left-aligned, right-aligned, or full-width pullquote, accordingly. The actual positioning of the button in your installation may vary.
@@ -78,8 +91,12 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 
 == Changelog ==
 
+= 1.6 =
+* Adds support for optional "size" attribute whereby user can designate font-size in pixels.
+* Changes border to left side when screen width is less than 768px, regardless of alignment.
+
 = 1.5 =
-* Changed <code>.pullquote</code> class to <code>.perfect-pullquote</code> to alleviate conflicting CSS issues per user requests. Note: After updating, you may see "ugly" pullquotes until you clear the cache in your browser and load the new CSS files from the plugin. If the pullquotes continue to look "broken," simply go into the Wordpress post, make a small change (i.e. add a space to the end of a sentence) and update the post.
+* Changed <code>.pullquote</code> class to <code>.perfect-pullquote</code> to alleviate conflicting CSS issues per user requests.
 
 = 1.4.1 =
 * Small CSS fix.
@@ -114,6 +131,9 @@ Simply utilize the "cite" and "link" options on the shortcode tag. Both options 
 * Initial release.
 
 == Upgrade Notice ==
+
+= 1.6 =
+Update to fix border attribute.
 
 = 1.5 =
 Update to resolve common CSS issues.

@@ -3,7 +3,7 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: Add beautifully styled pullquotes to your Wordpress posts
-Version:     1.5
+Version:     1.6
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com/
  */
@@ -11,40 +11,59 @@ add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
 function adamdehaven_pullquote_styles()
 {
     // Register the style like this for a plugin:
-    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.1', 'all' ); 
+    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.6', 'all' ); 
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'perfect-pullquotes-styles' );
 }
 add_shortcode( 'pullquote', 'adamdehaven_pullquote' );
 function adamdehaven_pullquote( $atts, $content = null ) {
 	$a = shortcode_atts( array(
-        'align' => 'left', // Align pullquote to the left, right, or full (for width:100%). Default left.
-        'color' => null, // Provide the HEX value of the border-color. Default #EEEEEE
-        'class' => null, // Add additional classes to the div.pullquote object
-        'cite'	=> null, // Add the name/source of the quote
-        'link'	=> null, // Add a link to the cited source, must be http or https link
+        'align' => 'left', // (Required) Align pullquote to the left, right, or full (for width:100%). Default left.
+        'cite'	=> null, // (Optional) Add the name/source of the quote
+        'link'	=> null, // (Optional) Add a link to the cited source, must be http or https link
+        'color' => null, // (Optional) Provide the HEX value of the border-color. Default #EEEEEE
+        'class' => null, // (Optional) Add additional classes to the div.pullquote object
+        'size'  => null, // (Optional) Define the font size of the text in pixels
         ), $atts );
 
 	// Pullquote alignment (left, right, or full)
 	$alignment = '';
 	switch ( $a['align'] ) {
         case 'full':
-            $alignment = 'pullquote-align-full';
+            $alignment = ' pullquote-align-full';
             break;
 		case 'right':
-			$alignment = 'pullquote-align-right';
+			$alignment = ' pullquote-align-right';
 			break;
 		default:
-			$alignment = 'pullquote-align-left';
+			$alignment = ' pullquote-align-left';
 			break;
 	}
 
+    // Check for classes
+    if ( isset($a['class']) && strlen($a['class']) > 0 && preg_match('/[a-zA-Z0-9_ -]*/', $a['class']) ):
+        $classes = strip_tags($classes);
+        $classes = esc_attr($a['class']);
+        $classes = ' '.preg_replace('/[^a-z0-9_ -]+/i', '', $classes);
+    else:
+        $classes = null;
+    endif;
+
+    // Check for size
+    if ( isset($a['size']) && strlen($a['size']) > 0 && strlen($a['size']) < 3 && ctype_digit($a['size']) && $a['size'] > '12' ):
+        $size = 'font-size:'.$a['size'].'px !important;';
+    else:
+        $size = null;
+    endif;
+
 	// border-color: HEX value
-	if ( isset($a['color']) && strlen($a['color']) > 1 && preg_match("/#([a-fA-F0-9]{3}){1,2}\b/",$a['color']) ):
-        $color = ' style="border-color:'.$a['color'].' !important;"';
+	if ( isset($a['color']) && strlen($a['color']) > 1 && preg_match('/#([a-fA-F0-9]{3}){1,2}\b/',$a['color']) ):
+        $color = 'border-color:'.$a['color'].' !important;';
     else:
         $color = null;
     endif;
+
+    $styles = ' style="'.$color.$size.'"';
 
     // Check for cite
     if ( isset($a['cite']) && strlen($a['cite']) > 1 ):
@@ -73,7 +92,7 @@ function adamdehaven_pullquote( $atts, $content = null ) {
 		$citeFooter = null;
 	endif;
 
-    return '<div class="perfect-pullquote vcard '.$alignment.' '.esc_attr($a['class']).'"'.$color.'><blockquote'.$citeAttribute.'><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
+    return '<div class="perfect-pullquote vcard'.$alignment.$classes.'"'.$styles.'><blockquote'.$citeAttribute.'><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
 }
 add_action( 'init', 'adamdehaven_buttons' );
 function adamdehaven_buttons() {

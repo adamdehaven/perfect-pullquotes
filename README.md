@@ -14,18 +14,20 @@ Once installed, the plugin will add a Pullquote dropdown button to the Visual Ed
 The plugin enables a [Wordpress shortcode](https://codex.wordpress.org/Shortcode_API) that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
 
 The default shortcode tag is shown here
-<pre>[pullquote align="left" color="" class="" cite="" link=""]This is the pullquote text.[/pullquote]</pre>
+<pre>[pullquote align="left" cite="" link="" color="" class="" size=""]This is the pullquote text.[/pullquote]</pre>
 
 ## OPTIONS
-The shortcode includes five options, as outlined below.
+The shortcode includes six options, as outlined below.
 
 Option | Accepts | Description | Example
 --- | --- | --- | ---
 <code>align</code> | <code>left</code> <code>right</code> <code>full</code> | Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). **Required** | <code>[pullquote align="left"][/pullquote]</code>
-<code>color</code> | [HEX](http://www.colorhexa.com/) color code | Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd> | <code>[pullquote align="left" color="#16989D"][/pullquote]</code>
-<code>class</code> | text | Add class(es) to pullquote container. **Optional** | <code>[pullquote align ="right" class="cited author-quote"][/pullquote]</code>
 <code>cite</code> | text | Cite your quotes back to their author/source. **Optional** | <code>[pullquote align ="right" cite="Jane Doe"][/pullquote]</code>
 <code>link</code> | URL | Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with http or https. **Optional** | <code>[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]</code>
+<code>color</code> | [HEX](http://www.colorhexa.com/) color code | Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd> | <code>[pullquote align="left" color="#16989D"][/pullquote]</code>
+<code>class</code> | text | Add class(es) to pullquote container. **Optional** | <code>[pullquote align ="right" class="cited author-quote"][/pullquote]</code>
+<code>size</code> | integer | Change the size, in pixels, of the pullquote's text. **Optional** | <code>[pullquote align ="right" size="32"][/pullquote]</code>
+
 
 ## EXAMPLES
 
