@@ -28,6 +28,51 @@ Option | Accepts | Description | Example
 <code>class</code> | text | Add class(es) to pullquote container. **Optional** | <code>[pullquote align ="right" class="cited author-quote"][/pullquote]</code>
 <code>size</code> | integer | Change the size, in pixels, of the pullquote's text. **Optional** | <code>[pullquote align ="right" size="32"][/pullquote]</code>
 
+## FAQ
+##### Are all of the shortcode option attributes required?
+
+No. Only the `align` option attribute is required. All other attributes may be deleted if unsued. For example:
+<pre>[pullquote align="left"]Text[/pullquote]</pre>
+
+-----
+
+##### How can I change the color of the pullquote's border?
+
+To change the default color of the pullquote’s border, before uploading the plugin, edit lines `67`, `75`, and `83` of the `perfect-pullquotes.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.
+
+-----
+
+##### How can I add additional classes to the pullquote's container?
+
+Simply utilize the "class" option on the shortcode tag. 
+<pre>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</pre>
+
+-----
+
+##### How can I change the font size of the text?
+
+Simply utilize the "size" option on the shortcode tag by entering the one or two-digit size, in pixels.
+<pre>[pullquote align="left" size="32"]Text[/pullquote]</pre>
+
+-----
+
+##### How can I add a cite to the quote?
+
+Simply utilize the "cite" option on the shortcode tag.
+<pre>[pullquote align="left" cite="Author Name"]Text[/pullquote]</pre>
+
+-----
+
+##### Can I link to the cited author's website, online works, etc.?
+
+Simply utilize the "cite" and "link" options on the shortcode tag. Both options must be present in order to generate a working link.
+<pre>[pullquote align="left" cite="Author Name" link="http://example.com"]Text[/pullquote]</pre>
+
+-----
+
+##### I updated the plugin, but now my pullquotes look weird. Help?
+
+After updating the plugin, you may see "ugly" pullquotes until you clear the cache in your browser and load the new CSS files from the plugin. Server cache time may vary. If the pullquotes continue to look "broken," simply clear your web brower's cache and refresh the page.
 
 ## EXAMPLES
 
