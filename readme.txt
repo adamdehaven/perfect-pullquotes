@@ -56,14 +56,10 @@ Once installed, the plugin will add a Pullquote dropdown button to the Visual Ed
 
 == Frequently Asked Questions ==
 
-= When I insert a `[pullquote]` shortcode, there are lots of empty options. Are all of the option attributes required? =
+= Are all of the shortcode option attributes required? =
 
-No.
-
-Only the `align` option attribute is required. All other attributes may be deleted if unsued. For example:
+No. Only the `align` option attribute is required. All other attributes may be deleted if unsued. For example:
 <pre>[pullquote align="left"]Text[/pullquote]</pre>
-
-To change the default color of the pullquote’s border, before uploading the plugin, edit lines `67`, `75`, and `83` of the `perfect-pullquotes.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.
 
 = How can I change the color of the pullquote's border? =
 
