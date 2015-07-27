@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Perfect-pullquotes by adamdehaven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Perfect-pullquotes</h1>
+      <h2 class="project-tagline">A Wordpress plugin to add left or right-aligned beautifully styled pullquotes. Also includes two custom buttons for the TinyMCE Editor as well as a custom shortcode.</h2>
+      <a href="https://github.com/adamdehaven/perfect-pullquotes" class="btn">View on GitHub</a>
+      <a href="https://github.com/adamdehaven/perfect-pullquotes/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/adamdehaven/perfect-pullquotes/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="perfect-pullquotes" class="anchor" href="#perfect-pullquotes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Perfect Pullquotes</h1>
+
+<p>A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on <a href="http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/">adamdehaven.com</a></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>INSTALLATION</h2>
+
+<p><a href="https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip">Download the plugin</a>. To change the default color of the pullquote’s border, edit lines <code>67</code>, <code>75</code>, and <code>83</code> of the <code>perfect-pullquotes.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode (details below). Upload the compressed <code>perfect-pullquotes.zip</code> plugin file via your Wordpress Dashboard.</p>
+
+<pre>Plugins &gt; Add New &gt; Upload Plugin</pre>
+
+<p>Once installed, the plugin will add a Pullquote dropdown button to the Visual Editor (as seen below) within your Wordpress installation as well as enable the <code>[pullquote]</code> shortcode. The actual positioning of the button in your installation may vary.</p>
+
+<p><img src="https://raw.githubusercontent.com/adamdehaven/perfect-pullquotes/master/screenshot-1.png" alt="Visual Editor preview with Pullquote buttons"></p>
+
+<h2>
+<a id="shortcode" class="anchor" href="#shortcode" aria-hidden="true"><span class="octicon octicon-link"></span></a>SHORTCODE</h2>
+
+<p>The plugin enables a <a href="https://codex.wordpress.org/Shortcode_API">Wordpress shortcode</a> that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.</p>
+
+<p>The default shortcode tag is shown here</p>
+
+<pre>[pullquote align="left" cite="" link="" color="" class="" size=""]This is the pullquote text.[/pullquote]</pre>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>OPTIONS</h2>
+
+<p>The shortcode includes six options, as outlined below.</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Accepts</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>align</code></td>
+<td>
+<code>left</code> <code>right</code> <code>full</code>
+</td>
+<td>Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). <strong>Required</strong>
+</td>
+<td><code>[pullquote align="left"][/pullquote]</code></td>
+</tr>
+<tr>
+<td><code>cite</code></td>
+<td>text</td>
+<td>Cite your quotes back to their author/source. <strong>Optional</strong>
+</td>
+<td><code>[pullquote align ="right" cite="Jane Doe"][/pullquote]</code></td>
+</tr>
+<tr>
+<td><code>link</code></td>
+<td>URL</td>
+<td>Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with http or https. <strong>Optional</strong>
+</td>
+<td><code>[pullquote align ="right" cite="Jane Doe" link="<a href="http://example.com%22%5D%5B/pullquote">http://example.com"][/pullquote</a>]</code></td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td>
+<a href="http://www.colorhexa.com/">HEX</a> color code</td>
+<td>Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd>
+</td>
+<td><code>[pullquote align="left" color="#16989D"][/pullquote]</code></td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>text</td>
+<td>Add class(es) to pullquote container. <strong>Optional</strong>
+</td>
+<td><code>[pullquote align ="right" class="cited author-quote"][/pullquote]</code></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td>integer</td>
+<td>Change the size, in pixels, of the pullquote's text. <strong>Optional</strong>
+</td>
+<td><code>[pullquote align ="right" size="32"][/pullquote]</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h2>
+
+<h5>
+<a id="are-all-of-the-shortcode-option-attributes-required" class="anchor" href="#are-all-of-the-shortcode-option-attributes-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>Are all of the shortcode option attributes required?</h5>
+
+<p>No. Only the <code>align</code> option attribute is required. All other attributes may be deleted if unsued. For example:</p>
+
+<pre>[pullquote align="left"]Text[/pullquote]</pre>
+
+<hr>
+
+<h5>
+<a id="how-can-i-change-the-color-of-the-pullquotes-border" class="anchor" href="#how-can-i-change-the-color-of-the-pullquotes-border" aria-hidden="true"><span class="octicon octicon-link"></span></a>How can I change the color of the pullquote's border?</h5>
+
+<p>To change the default color of the pullquote’s border, before uploading the plugin, edit lines <code>67</code>, <code>75</code>, and <code>83</code> of the <code>perfect-pullquotes.css</code> file by changing the HEX value of the <code>border-color</code> attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.</p>
+
+<hr>
+
+<h5>
+<a id="how-can-i-add-additional-classes-to-the-pullquotes-container" class="anchor" href="#how-can-i-add-additional-classes-to-the-pullquotes-container" aria-hidden="true"><span class="octicon octicon-link"></span></a>How can I add additional classes to the pullquote's container?</h5>
+
+<p>Simply utilize the "class" option on the shortcode tag. </p>
+
+<pre>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</pre>
+
+<hr>
+
+<h5>
+<a id="how-can-i-change-the-font-size-of-the-text" class="anchor" href="#how-can-i-change-the-font-size-of-the-text" aria-hidden="true"><span class="octicon octicon-link"></span></a>How can I change the font size of the text?</h5>
+
+<p>Simply utilize the "size" option on the shortcode tag by entering the one or two-digit size, in pixels.</p>
+
+<pre>[pullquote align="left" size="32"]Text[/pullquote]</pre>
+
+<hr>
+
+<h5>
+<a id="how-can-i-add-a-cite-to-the-quote" class="anchor" href="#how-can-i-add-a-cite-to-the-quote" aria-hidden="true"><span class="octicon octicon-link"></span></a>How can I add a cite to the quote?</h5>
+
+<p>Simply utilize the "cite" option on the shortcode tag.</p>
+
+<pre>[pullquote align="left" cite="Author Name"]Text[/pullquote]</pre>
+
+<hr>
+
+<h5>
+<a id="can-i-link-to-the-cited-authors-website-online-works-etc" class="anchor" href="#can-i-link-to-the-cited-authors-website-online-works-etc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Can I link to the cited author's website, online works, etc.?</h5>
+
+<p>Simply utilize the "cite" and "link" options on the shortcode tag. Both options must be present in order to generate a working link.</p>
+
+<pre>[pullquote align="left" cite="Author Name" link="http://example.com"]Text[/pullquote]</pre>
+
+<hr>
+
+<h5>
+<a id="i-updated-the-plugin-but-now-my-pullquotes-look-weird-help" class="anchor" href="#i-updated-the-plugin-but-now-my-pullquotes-look-weird-help" aria-hidden="true"><span class="octicon octicon-link"></span></a>I updated the plugin, but now my pullquotes look weird. Help?</h5>
+
+<p>After updating the plugin, you may see "ugly" pullquotes until you clear the cache in your browser and load the new CSS files from the plugin. Server cache time may vary. If the pullquotes continue to look "broken," simply clear your web brower's cache and refresh the page.</p>
+
+<h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>EXAMPLES</h2>
+
+<p>Below are a series of paragraphs (filler text) with pullquotes inserted:</p>
+
+<p><img src="https://raw.githubusercontent.com/adamdehaven/perfect-pullquotes/master/screenshot-2.png" alt="Sample pullquotes"></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/adamdehaven/perfect-pullquotes">Perfect-pullquotes</a> is maintained by <a href="https://github.com/adamdehaven">adamdehaven</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
