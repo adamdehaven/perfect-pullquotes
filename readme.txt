@@ -96,6 +96,9 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 
 == Changelog ==
 
+= 1.6.1 =
+* Minor update for Wordpress 4.3.1
+
 = 1.6 =
 * Adds support for optional "size" attribute whereby user can designate font-size in pixels.
 * Changes border to left side when screen width is less than 768px, regardless of alignment.
