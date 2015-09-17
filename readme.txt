@@ -3,8 +3,8 @@ Contributors: adamdehaven
 Donate link: http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
-Tested up to: 4.3
-Stable tag: 1.6
+Tested up to: 4.3.1
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,7 +47,7 @@ The shortcode includes six options, (align, color, and class) as outlined below:
 
 == Installation ==
 
-Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border before installing, edit lines `67`, `75`, and `83` of the `perfect-pullquotes.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode. 
+Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/perfect-pullquotes/archive/master.zip). To change the default color of the pullquote’s border before installing, edit lines `67`, `75`, and `83` of the `perfect-pullquotes.css` file by changing the HEX value of the `border-color` attribute. Alternatively, once the plugin is installed, you may utilize the “color” option included within the shortcode.
 
 1. Upload the compressed `perfect-pullquotes.zip` plugin file via your Wordpress Dashboard: `Plugins > Add New > Upload Plugin`, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
 2. Activate the plugin through the 'Plugins' menu in WordPress
@@ -67,7 +67,7 @@ To change the default color of the pullquote’s border, before uploading the pl
 
 = How can I add additional classes to the pullquote's container? =
 
-Simply utilize the "class" option on the shortcode tag. 
+Simply utilize the "class" option on the shortcode tag.
 <pre>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</pre>
 
 = How can I change the font size of the text? =
