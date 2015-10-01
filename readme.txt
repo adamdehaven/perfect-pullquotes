@@ -97,7 +97,7 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 == Changelog ==
 
 = 1.6.2 =
-* Minor update for Wordpress 4.3.1
+* Fixes issue with "size" attribute.
 
 = 1.6 =
 * Adds support for optional "size" attribute whereby user can designate font-size in pixels.
