@@ -3,7 +3,7 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: Add beautifully styled pullquotes to your Wordpress posts
-Version:     1.6.1
+Version:     1.6.2
 Author:      Adam Dehaven
 Author URI:  http://adamdehaven.com/
  */
@@ -11,7 +11,7 @@ add_action( 'wp_enqueue_scripts', 'adamdehaven_pullquote_styles' );
 function adamdehaven_pullquote_styles()
 {
     // Register the style like this for a plugin:
-    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.6.1', 'all' );
+    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.6.2', 'all' );
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'perfect-pullquotes-styles' );
 }
@@ -50,10 +50,12 @@ function adamdehaven_pullquote( $atts, $content = null ) {
     endif;
 
     // Check for size
-    if ( isset($a['size']) && strlen($a['size']) > 0 && strlen($a['size']) < 3 && ctype_digit($a['size']) && $a['size'] > '12' ):
+    if ( isset($a['size']) && strlen($a['size']) > 0 && strlen($a['size']) < 3 && is_numeric($a['size']) ):
         $size = 'font-size:'.$a['size'].'px !important;';
+        $paragraphSize = ' style="font-size:'.$a['size'].'px !important;"';
     else:
         $size = null;
+        $paragraphSize = null;
     endif;
 
     // border-color: HEX value
@@ -63,7 +65,7 @@ function adamdehaven_pullquote( $atts, $content = null ) {
         $color = null;
     endif;
 
-    if( !is_null($color) || !is_null($color) ):
+    if( !is_null($color) || !is_null($size) ):
         $styles = ' style="'.$color.$size.'"';
     else:
         $styles = null;
@@ -96,7 +98,7 @@ function adamdehaven_pullquote( $atts, $content = null ) {
         $citeFooter = null;
     endif;
 
-    return '<div class="perfect-pullquote vcard'.$alignment.$classes.'"'.$styles.'><blockquote'.$citeAttribute.'><p>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
+    return '<div class="perfect-pullquote vcard'.$alignment.$classes.'"'.$styles.'><blockquote'.$citeAttribute.'><p'.$paragraphSize.'>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
 }
 add_action( 'init', 'adamdehaven_buttons' );
 function adamdehaven_buttons() {
