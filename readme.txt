@@ -96,7 +96,7 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 
 == Changelog ==
 
-= 1.6.2 =
+= 1.6.3 =
 * Compatibility updates for Wordpress 4.5.1
 
 = 1.6.2 =
