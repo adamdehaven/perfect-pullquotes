@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-w
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.5.1
-Stable tag: 1.6.2
+Stable tag: 1.6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,10 +97,13 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 == Changelog ==
 
 = 1.6.2 =
+* Compatibility updates for Wordpress 4.5.1
+
+= 1.6.2 =
 * Fixes issue with "size" attribute.
 
 = 1.6.1 =
-* Minor update for Wordpress 4.3.1
+* Minor update for Wordpress 4.3.1.
 
 = 1.6 =
 * Adds support for optional "size" attribute whereby user can designate font-size in pixels.
