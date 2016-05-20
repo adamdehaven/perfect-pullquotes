@@ -1,6 +1,6 @@
 # Perfect Pullquotes
 
-[![WordPress](https://img.shields.io/wordpress/v/akismet.svg?maxAge=2592000)](http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/)
+[![WordPress](https://img.shields.io/wordpress/v/akismet.svg?maxAge=2592000)](http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://raw.githubusercontent.com/adamdehaven/perfect-pullquotes/master/LICENSE)
 
 A Wordpress plugin to add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
 
