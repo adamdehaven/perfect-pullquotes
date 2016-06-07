@@ -16,34 +16,34 @@ Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. In
 The plugin enables a Wordpress shortcode that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
 
 The default shortcode tag is shown here
-<pre>[pullquote align="left" class="" cite="" link="" color=""]This is the pullquote text.[/pullquote]</pre>
+<pre>[perfectpullquote align="left" class="" cite="" link="" color=""]This is the pullquote text.[/perfectpullquote]</pre>
 
 = Options =
 The shortcode includes six options, (align, color, and class) as outlined below:
 
 = align="left" =
 **REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). Accepts "left", "right", or "full"
-<pre>[pullquote align="left"][/pullquote]</pre>
+<pre>[perfectpullquote align="left"][/perfectpullquote]</pre>
 
 = cite="Jane Doe" =
 **Optional**: Cite your quotes back to their author/source
-<pre>[pullquote align ="right" cite="Jane Doe"][/pullquote]</pre>
+<pre>[perfectpullquote align ="right" cite="Jane Doe"][/perfectpullquote]</pre>
 
 = link="http://example.com" =
 **Optional**: Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with `http` or `https`
-<pre>[pullquote align ="right" cite="Jane Doe" link="http://example.com"][/pullquote]</pre>
+<pre>[perfectpullquote align ="right" cite="Jane Doe" link="http://example.com"][/perfectpullquote]</pre>
 
 = color="#EEEEEE" =
 **Optional**: Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.
-<pre>[pullquote align="left" color="#16989D"][/pullquote]</pre>
+<pre>[perfectpullquote align="left" color="#16989D"][/perfectpullquote]</pre>
 
 = class="className" =
 **Optional**: Add class(es) to pullquote container.
-<pre>[pullquote align ="right" class="firstClass secondClass"][/pullquote]</pre>
+<pre>[perfectpullquote align ="right" class="firstClass secondClass"][/perfectpullquote]</pre>
 
 = size="21" =
 **Optional**: Change the font size of the pullquote's text, in pixels.
-<pre>[pullquote align ="right" size="32"][/pullquote]</pre>
+<pre>[perfectpullquote align ="right" size="32"][/perfectpullquote]</pre>
 
 == Installation ==
 
@@ -52,14 +52,14 @@ Download the plugin from Wordpress or [GitHub](https://github.com/adamdehaven/pe
 1. Upload the compressed `perfect-pullquotes.zip` plugin file via your Wordpress Dashboard: `Plugins > Add New > Upload Plugin`, or to the `/wp-content/plugins/` directory within your Wordpress installation on your server.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
-Once installed, the plugin will add a Pullquote dropdown button to the Visual Editor (as seen below) within your Wordpress installation as well as enable the `[pullquote]` shortcode.
+Once installed, the plugin will add a Pullquote dropdown button to the Visual Editor (as seen below) within your Wordpress installation as well as enable the `[perfectpullquote]` shortcode.
 
 == Frequently Asked Questions ==
 
 = Are all of the shortcode option attributes required? =
 
 No. Only the `align` option attribute is required. All other attributes may be deleted if unsued. For example:
-<pre>[pullquote align="left"]Text[/pullquote]</pre>
+<pre>[perfectpullquote align="left"]Text[/perfectpullquote]</pre>
 
 = How can I change the color of the pullquote's border? =
 
@@ -68,22 +68,22 @@ To change the default color of the pullquote’s border, before uploading the pl
 = How can I add additional classes to the pullquote's container? =
 
 Simply utilize the "class" option on the shortcode tag.
-<pre>[pullquote align="left" class="firstClass secondClass"]Text[/pullquote]</pre>
+<pre>[perfectpullquote align="left" class="firstClass secondClass"]Text[/perfectpullquote]</pre>
 
 = How can I change the font size of the text? =
 
 Simply utilize the "size" option on the shortcode tag by entering the one or two-digit size, in pixels.
-<pre>[pullquote align="left" size="32"]Text[/pullquote]</pre>
+<pre>[perfectpullquote align="left" size="32"]Text[/perfectpullquote]</pre>
 
 = How can I add a cite to the quote? =
 
 Simply utilize the "cite" option on the shortcode tag.
-<pre>[pullquote align="left" cite="Author Name"]Text[/pullquote]</pre>
+<pre>[perfectpullquote align="left" cite="Author Name"]Text[/perfectpullquote]</pre>
 
 = Can I link to the cited author's website, online works, etc.? =
 
 Simply utilize the "cite" and "link" options on the shortcode tag. Both options must be present in order to generate a working link.
-<pre>[pullquote align="left" cite="Author Name" link="http://example.com"]Text[/pullquote]</pre>
+<pre>[perfectpullquote align="left" cite="Author Name" link="http://example.com"]Text[/perfectpullquote]</pre>
 
 = I updated the plugin, but now my pullquotes look weird. Help? =
 
