@@ -97,8 +97,7 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 == Changelog ==
 
 = 1.7 =
-* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]
-  * SHORTCODES IN ALL EXISTING POSTS WILL NEED TO BE UPDATED TO [perfectpullquote]
+* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote].
 
 = 1.6.3 =
 * Compatibility updates for Wordpress 4.5.1
