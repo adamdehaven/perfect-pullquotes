@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-w
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.5.2
-Stable tag: 1.6.3
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -95,6 +95,10 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 2. An example of a left-aligned and right-aligned pullquote. Your pullquotes will vary depending on your font settings, color choices, etc.
 
 == Changelog ==
+
+= 1.7 =
+* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]
+  * SHORTCODES IN ALL EXISTING POSTS WILL NEED TO BE UPDATED TO [perfectpullquote]
 
 = 1.6.3 =
 * Compatibility updates for Wordpress 4.5.1
