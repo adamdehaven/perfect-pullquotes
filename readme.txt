@@ -97,7 +97,7 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 == Changelog ==
 
 = 1.7 =
-* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote].
+* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
 
 = 1.6.3 =
 * Compatibility updates for Wordpress 4.5.1
@@ -163,3 +163,8 @@ Update now for an enhanced Pullquote button, to resolve the invalid header notic
 
 = 1.0.1 =
 Minor update for performance improvements.
+
+== Upgrade Notice ==
+
+= 1.7 =
+MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
