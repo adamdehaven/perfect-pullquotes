@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.7
+ * version 1.7.1
  *
  * Adam DeHaven ( @adamdehaven )
  * http://adamdehaven.com/
@@ -21,21 +21,21 @@
          */
         init : function(ed, url) {
             // Left-Aligned Pullquote
-            ed.addCommand('pullquote-left', function() {
+            ed.addCommand('perfectpullquote-left', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
                 return_text = '[perfectpullquote align="left" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote
-            ed.addCommand('pullquote-right', function() {
+            ed.addCommand('perfectpullquote-right', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
                 return_text = '[perfectpullquote align="right" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote
-            ed.addCommand('pullquote-full', function() {
+            ed.addCommand('perfectpullquote-full', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
                 return_text = '[perfectpullquote align="full" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
@@ -51,9 +51,9 @@
                 image : url + '/pullquote-left.png',
                 size : 'small',
                 menu : [
-                    {text: 'Left-Aligned', onclick: function() {ed.execCommand('pullquote-left'); }},
-                    {text: 'Right-Aligned', onclick: function() {ed.execCommand('pullquote-right'); }},
-                    {text: 'Full-Width', onclick: function() {ed.execCommand('pullquote-full'); }},
+                    {text: 'Left-Aligned', onclick: function() {ed.execCommand('perfectpullquote-left'); }},
+                    {text: 'Right-Aligned', onclick: function() {ed.execCommand('perfectpullquote-right'); }},
+                    {text: 'Full-Width', onclick: function() {ed.execCommand('perfectpullquote-full'); }},
                 ]
             });
         },
@@ -84,7 +84,7 @@
                     author : 'Adam DeHaven',
                     authorurl : 'http://adamdehaven.com',
                     infourl : 'http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/',
-                    version : "1.7"
+                    version : "1.7.1"
             };
         }
     });
