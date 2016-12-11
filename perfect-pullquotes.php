@@ -3,7 +3,7 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: Add beautifully styled pullquotes to your Wordpress posts
-Version:     1.7.1
+Version:     1.7.2
 Author:      Adam DeHaven
 Author URI:  http://adamdehaven.com/
  */
@@ -73,7 +73,7 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
 
     // Check for cite
     if ( isset($a['cite']) && strlen($a['cite']) > 1 ):
-        $citeText = '<span itemprop="name fn">'.strip_tags( $a['cite'] ).'</span>';
+        $citeText = '<span itemprop="name">'.strip_tags( $a['cite'] ).'</span>';
     else:
         $citeText = null;
     endif;
