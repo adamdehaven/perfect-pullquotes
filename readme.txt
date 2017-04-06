@@ -4,7 +4,7 @@ Donate link: http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-w
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
 Tested up to: 4.7.3
-Stable tag: 1.7.2
+Stable tag: 1.7.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 
 == Changelog ==
 
+= 1.7.3 =
+* Adds a CSS reset for `blockquote p:before` and `blockquote p:after` psuedo elements to prevent theme overrides.
+
 = 1.7.2 =
 * Resolves an error with generated Structured Data validation. (Thanks to @sarahsmithers for the head's up!)
 
@@ -172,6 +175,9 @@ Update now for an enhanced Pullquote button, to resolve the invalid header notic
 Minor update for performance improvements.
 
 == Upgrade Notice ==
+
+= 1.7.3 =
+Adds a CSS reset for `blockquote p:before` and `blockquote p:after` psuedo elements to prevent theme overrides.
 
 = 1.7.2 =
 Resolves an error with generated Structured Data validation. (Thanks to @sarahsmithers for the head's up!)

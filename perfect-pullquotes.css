@@ -21,7 +21,10 @@
     quotes:none !important;
 }
 
-.perfect-pullquote blockquote:before, blockquote:after { /* Reset <blockquote> element */
+.perfect-pullquote blockquote:before, 
+.perfect-pullquote blockquote:after,
+.perfect-pullquote blockquote p:before, 
+.perfect-pullquote blockquote p:after { 
     content:'' !important;
     content:none !important;
 }
