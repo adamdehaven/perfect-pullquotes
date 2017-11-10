@@ -24,21 +24,21 @@
             ed.addCommand('perfectpullquote-left', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[perfectpullquote align="left" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
+                return_text = '[perfectpullquote align="left" cite="" link="" color="" class="" size="" border_loc=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote
             ed.addCommand('perfectpullquote-right', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[perfectpullquote align="right" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
+                return_text = '[perfectpullquote align="right" cite="" link="" color="" class="" size="" border_loc=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Right-Aligned Pullquote
             ed.addCommand('perfectpullquote-full', function() {
                 var selected_text = ed.selection.getContent();
                 var return_text = '';
-                return_text = '[perfectpullquote align="full" cite="" link="" color="" class="" size=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
+                return_text = '[perfectpullquote align="full" cite="" link="" color="" class="" size="" border_loc=""]' + selected_text.replace(/<\/?p[^>]*>/g, " ") + '[/perfectpullquote]<br/><br/>';
                 ed.execCommand('mceInsertContent', 0, return_text);
             });
             // Pullquote Menu Button http://www.tinymce.com/wiki.php/api4:class.tinymce.ui.MenuButton

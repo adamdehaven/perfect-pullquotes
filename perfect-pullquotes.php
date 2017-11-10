@@ -24,9 +24,13 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
         'color' => null, // (Optional) Provide the HEX value of the border-color. Default #EEEEEE
         'class' => null, // (Optional) Add additional classes to the div.pullquote object
         'size'  => null, // (Optional) Define the font size of the text in pixels
+        'border_loc' => 'default', // (Optional, defaults to left or right) Options to change border location to either the top, or leave it 'defaulting' to the left or right.
+        
         ), $atts );
 
     // Pullquote alignment (left, right, or full)
+    
+    
     $alignment = '';
     switch ( $a['align'] ) {
         case 'full':
@@ -39,7 +43,24 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
             $alignment = ' pullquote-align-left';
             break;
     }
-
+    
+    //Check for border location options.
+    $border = '';
+    switch ($a['border_loc']){
+        case 'top':
+            $border = " border-place-top";
+            break;
+        default:
+            if ($a['align'] == 'right') {
+                $border = " border-place-right";
+            } else {
+                $border = " border-place-left";
+            }
+            break;
+    }
+    
+    
+        
     // Check for classes
     if ( isset($a['class']) && strlen($a['class']) > 0 && preg_match('/[a-zA-Z0-9_ -]*/', $a['class']) ):
         $classes = strip_tags($classes);
@@ -65,8 +86,8 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
         $color = null;
     endif;
 
-    if( !is_null($color) || !is_null($size) ):
-        $styles = ' style="'.$color.$size.'"';
+    if( !is_null($color) || !is_null($size)):
+        $styles = ' style="'.$color.$size. '"';
     else:
         $styles = null;
     endif;
@@ -98,7 +119,7 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
         $citeFooter = null;
     endif;
 
-    return '<div class="perfect-pullquote vcard'.$alignment.$classes.'"'.$styles.'><blockquote'.$citeAttribute.'><p'.$paragraphSize.'>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
+    return '<div class="perfect-pullquote vcard'.$alignment.$border.$classes.'"'.$styles.'><blockquote'.$citeAttribute.'><p'.$paragraphSize.'>'.do_shortcode($content).'</p>'.$citeFooter.'</blockquote></div>';
 }
 add_action( 'init', 'adamdehaven_buttons' );
 function adamdehaven_buttons() {
