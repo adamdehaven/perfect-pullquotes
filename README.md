@@ -29,6 +29,7 @@ Option | Accepts | Description | Example
 <code>color</code> | [HEX](http://www.colorhexa.com/) color code | Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd> | <code>[perfectpullquote align="left" color="#16989D"][/perfectpullquote]</code>
 <code>class</code> | text | Add class(es) to pullquote container. **Optional** | <code>[perfectpullquote align ="right" class="cited author-quote"][/perfectpullquote]</code>
 <code>size</code> | integer | Change the size, in pixels, of the pullquote's text. **Optional** | <code>[perfectpullquote align ="right" size="32"][/perfectpullquote]</code>
+<code>border_loc</code> | <code>top</code> <code>default</code> | Change the border location of the pullquote **Optional** | <code>[perfectpullquote align ="right" border_loc="top"][/perfectpullquote]</code>
 
 ## FAQ
 ##### Are all of the shortcode option attributes required?
