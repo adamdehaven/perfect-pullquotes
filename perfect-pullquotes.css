@@ -1,9 +1,9 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.7.3
+ * version 1.7.4
  *
  * Adam DeHaven ( @adamdehaven )
- * http://adamdehaven.com/
+ * https://adamdehaven.com/
  *
  * perfect-pullquotes.css
  *
@@ -21,10 +21,10 @@
     quotes:none !important;
 }
 
-.perfect-pullquote blockquote:before, 
+.perfect-pullquote blockquote:before,
 .perfect-pullquote blockquote:after,
-.perfect-pullquote blockquote p:before, 
-.perfect-pullquote blockquote p:after { 
+.perfect-pullquote blockquote p:before,
+.perfect-pullquote blockquote p:after {
     content:'' !important;
     content:none !important;
 }
@@ -71,7 +71,6 @@
     margin: 0.5em 1.5em 1em 0;
     padding-left: 0;
     float: left;
-    
 }
 
 .pullquote-align-right {
@@ -79,7 +78,6 @@
     margin: 0.5em 0 1em 1.5em;
     padding-right: 0;
     float: right;
-    
 }
 
 .pullquote-align-full {
@@ -87,16 +85,15 @@
     margin: 0.5em 0 1em 1.5em;
     padding-right: 0;
     float: none;
-    
 }
 
-.border-place-left{
+.pullquote-border-placement-left{
     border-left: 5px solid #eeeeee;
 }
-.border-place-right{
+.pullquote-border-placement-right{
     border-right: 5px solid #eeeeee;
 }
-.border-place-top{
+.pullquote-border-placement-top{
     border-top: 5px solid #eeeeee;
     padding-left:.5em;
 	padding-right: .5em;

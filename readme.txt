@@ -1,17 +1,17 @@
 === Perfect Pullquotes ===
 Contributors: adamdehaven
-Donate link: http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
+Donate link: https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
-Tested up to: 4.8.1
-Stable tag: 1.7.3
+Tested up to: 4.9
+Stable tag: 1.7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add beautifully styled left-aligned, right-aligned, or full-width pullquotes to your Wordpress posts.
 
 == Description ==
-Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
+Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. Includes a custom 'Pullquote' menu button for the TinyMCE Editor as well as a custom shortcode. View the always-current info post on [adamdehaven.com](https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-theme-with-the-perfect-pullquotes-plugin/)
 
 The plugin enables a Wordpress shortcode that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
 
@@ -96,6 +96,9 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 
 == Changelog ==
 
+= 1.7.4 =
+* Adds `bordertop` attribute that allows moving the pullquote border to the top (above the quote text) when `bordertop="true"` is set on the shortcode. Defaults to `bordertop="false"`.
+
 = 1.7.3 =
 * Adds a CSS reset for `blockquote p:before` and `blockquote p:after` psuedo elements to prevent theme overrides.
 
@@ -103,11 +106,11 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 * Resolves an error with generated Structured Data validation. (Thanks to @sarahsmithers for the head's up!)
 
 = 1.7.1 =
-* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
+* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
 * Bug fixes
 
 = 1.7 =
-* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
+* MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
 
 = 1.6.3 =
 * Compatibility updates for Wordpress 4.5.1
@@ -183,7 +186,7 @@ Adds a CSS reset for `blockquote p:before` and `blockquote p:after` psuedo eleme
 Resolves an error with generated Structured Data validation. (Thanks to @sarahsmithers for the head's up!)
 
 = 1.7.1 =
-MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
+MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
 
 = 1.7 =
-MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See http://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information
+MAJOR UPDATE: Changes shortcode FROM [pullquote] TO [perfectpullquote]. Shortcodes in all existing posts will need to be updated to [perfectpullquote]. See https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/ for more information

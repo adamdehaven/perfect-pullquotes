@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Perfect Pullquotes
-Plugin URI:  http://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
+Plugin URI:  https://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: Add beautifully styled pullquotes to your Wordpress posts
-Version:     1.7.3
+Version:     1.7.4
 Author:      Adam DeHaven
-Author URI:  http://adamdehaven.com/
+Author URI:  https://adamdehaven.com/
  */
 add_action( 'wp_enqueue_scripts', 'adamdehaven_perfectpullquote_styles' );
 function adamdehaven_perfectpullquote_styles()
@@ -19,18 +19,18 @@ add_shortcode( 'perfectpullquote', 'adamdehaven_perfectpullquote' );
 function adamdehaven_perfectpullquote( $atts, $content = null ) {
     $a = shortcode_atts( array(
         'align' => 'left', // (Required) Align pullquote to the left, right, or full (for width:100%). Default left.
-        'cite'  => null, // (Optional) Add the name/source of the quote
-        'link'  => null, // (Optional) Add a link to the cited source, must be http or https link
+        'bordertop' => 'false', // (Optional) Change border location to the top, then fallback to align location on mobile.
+        'cite'  => null, // (Optional) Add the name/source of the quote.
+        'link'  => null, // (Optional) Add a link to the cited source, must be http or https link.
         'color' => null, // (Optional) Provide the HEX value of the border-color. Default #EEEEEE
-        'class' => null, // (Optional) Add additional classes to the div.pullquote object
-        'size'  => null, // (Optional) Define the font size of the text in pixels
-        'border_loc' => 'default', // (Optional, defaults to left or right) Options to change border location to either the top, or leave it 'defaulting' to the left or right.
-        
+        'class' => null, // (Optional) Add additional classes to the div.pullquote object.
+        'size'  => null // (Optional) Define the font size of the text in pixels.
+
         ), $atts );
 
     // Pullquote alignment (left, right, or full)
-    
-    
+
+
     $alignment = '';
     switch ( $a['align'] ) {
         case 'full':
@@ -43,24 +43,24 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
             $alignment = ' pullquote-align-left';
             break;
     }
-    
+
     //Check for border location options.
     $border = '';
-    switch ($a['border_loc']){
-        case 'top':
-            $border = " border-place-top";
+    switch ($a['bordertop']){
+        case 'true':
+            $border = " pullquote-border-placement-top";
             break;
         default:
             if ($a['align'] == 'right') {
-                $border = " border-place-right";
+                $border = " pullquote-border-placement-right";
             } else {
-                $border = " border-place-left";
+                $border = " pullquote-border-placement-left";
             }
             break;
     }
-    
-    
-        
+
+
+
     // Check for classes
     if ( isset($a['class']) && strlen($a['class']) > 0 && preg_match('/[a-zA-Z0-9_ -]*/', $a['class']) ):
         $classes = strip_tags($classes);
@@ -87,7 +87,7 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
     endif;
 
     if( !is_null($color) || !is_null($size)):
-        $styles = ' style="'.$color.$size. '"';
+        $styles = ' style="'.$color.$size.'"';
     else:
         $styles = null;
     endif;
