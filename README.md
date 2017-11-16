@@ -24,7 +24,7 @@ The shortcode includes six options, as outlined below.
 Option | Accepts | Description | Example
 --- | --- | --- | ---
 <code>align</code> | <code>left</code> <code>right</code> <code>full</code> | Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). **Required** | <code>[perfectpullquote align="left"]This is the text.[/perfectpullquote]</code>
-<code>bordertop</code> | <code>true</code> <code>false</code> | Move the border location above the pullquote. On mobile, falls back to the `align` corresponding location. **Optional** | <code>[perfectpullquote align="right" bordertop="true"]This is the text.[/perfectpullquote]</code>
+<code>bordertop</code> | <code>true</code> | Move the border location above the pullquote. On mobile, falls back to the `align` corresponding location. **Optional** | <code>[perfectpullquote align="right" bordertop="true"]This is the text.[/perfectpullquote]</code>
 <code>cite</code> | text | Cite your quotes back to their author/source. **Optional** | <code>[perfectpullquote align="right" cite="Jane Doe"]This is the text.[/perfectpullquote]</code>
 <code>link</code> | URL | Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with http or https. **Optional** | <code>[perfectpullquote align="right" cite="Jane Doe" link="http://example.com"]This is the text.[/perfectpullquote]</code>
 <code>color</code> | [HEX](http://www.colorhexa.com/) color code | Change the default <code>border-color</code> attribute by entering a valid HEX color, including the <kbd>#</kbd> | <code>[perfectpullquote align="left" color="#16989D"]This is the text.[/perfectpullquote]</code>
