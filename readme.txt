@@ -16,34 +16,38 @@ Add beautifully styled left-aligned, right-aligned, or full-width pullquotes. In
 The plugin enables a Wordpress shortcode that allows you to add a pullquote within your content. The shortcode can be added manually or by selecting text in the text editor and then selecting an option (left, right, or full) from the Pullquote dropdown button.
 
 The default shortcode tag is shown here
-<pre>[perfectpullquote align="left" class="" cite="" link="" color=""]This is the pullquote text.[/perfectpullquote]</pre>
+<pre>[perfectpullquote align="left" bordertop="" class="" cite="" link="" color=""]This is the pullquote text.[/perfectpullquote]</pre>
 
 = Options =
 The shortcode includes six options, (align, color, and class) as outlined below:
 
 = align="left" =
 **REQUIRED**: Determines whether pullquote is left-aligned, right-aligned, or full-width (95% width of container). Accepts "left", "right", or "full"
-<pre>[perfectpullquote align="left"][/perfectpullquote]</pre>
+<pre>[perfectpullquote align="left"]This is the text.[/perfectpullquote]</pre>
+
+= bordertop="true" =
+**Optional**: Move the border location above the pullquote. On mobile, falls back to the align corresponding location.
+<pre>[perfectpullquote align="left" bordertop="true"]This is the text.[/perfectpullquote]</pre>
 
 = cite="Jane Doe" =
 **Optional**: Cite your quotes back to their author/source
-<pre>[perfectpullquote align ="right" cite="Jane Doe"][/perfectpullquote]</pre>
+<pre>[perfectpullquote align ="right" cite="Jane Doe"]This is the text.[/perfectpullquote]</pre>
 
 = link="http://example.com" =
 **Optional**: Turn the cited author's name into a link that opens in a new window. Must be a valid URL beginning with `http` or `https`
-<pre>[perfectpullquote align ="right" cite="Jane Doe" link="http://example.com"][/perfectpullquote]</pre>
+<pre>[perfectpullquote align ="right" cite="Jane Doe" link="http://example.com"]This is the text.[/perfectpullquote]</pre>
 
 = color="#EEEEEE" =
 **Optional**: Change the default `border-color` attribute by entering a valid HEX color, including the pound ( # ) sign.
-<pre>[perfectpullquote align="left" color="#16989D"][/perfectpullquote]</pre>
+<pre>[perfectpullquote align="left" color="#16989D"]This is the text.[/perfectpullquote]</pre>
 
 = class="className" =
 **Optional**: Add class(es) to pullquote container.
-<pre>[perfectpullquote align ="right" class="firstClass secondClass"][/perfectpullquote]</pre>
+<pre>[perfectpullquote align ="right" class="firstClass secondClass"]This is the text.[/perfectpullquote]</pre>
 
 = size="21" =
 **Optional**: Change the font size of the pullquote's text, in pixels.
-<pre>[perfectpullquote align ="right" size="32"][/perfectpullquote]</pre>
+<pre>[perfectpullquote align ="right" size="32"]This is the text.[/perfectpullquote]</pre>
 
 == Installation ==
 
