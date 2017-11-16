@@ -69,14 +69,12 @@
 .pullquote-align-left {
     text-align: left;
     margin: 0.5em 1.5em 1em 0;
-    /*padding-left: 0;*/
     float: left;
 }
 
 .pullquote-align-right {
     text-align: left;
     margin: 0.5em 0 1em 1.5em;
-    /*padding-right: 0;*/
     float: right;
 }
 
