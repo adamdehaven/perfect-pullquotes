@@ -69,14 +69,14 @@
 .pullquote-align-left {
     text-align: left;
     margin: 0.5em 1.5em 1em 0;
-    padding-left: 0;
+    /*padding-left: 0;*/
     float: left;
 }
 
 .pullquote-align-right {
     text-align: left;
     margin: 0.5em 0 1em 1.5em;
-    padding-right: 0;
+    /*padding-right: 0;*/
     float: right;
 }
 
@@ -87,13 +87,13 @@
     float: none;
 }
 
-.pullquote-border-placement-left{
+.pullquote-border-placement-left {
     border-left: 5px solid #eeeeee;
 }
-.pullquote-border-placement-right{
+.pullquote-border-placement-right {
     border-right: 5px solid #eeeeee;
 }
-.pullquote-border-placement-top{
+.pullquote-border-placement-top {
     border-top: 5px solid #eeeeee;
     padding-left:.5em;
 	padding-right: .5em;
