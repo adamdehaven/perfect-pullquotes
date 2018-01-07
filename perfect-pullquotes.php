@@ -51,7 +51,7 @@ function adamdehaven_perfectpullquote( $atts, $content = null ) {
             $border = " pullquote-border-placement-top";
             break;
         default:
-            if ($a['align'] == 'right') {
+            if ($a['align'] == 'left') {
                 $border = " pullquote-border-placement-right";
             } else {
                 $border = " pullquote-border-placement-left";
