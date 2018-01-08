@@ -1,6 +1,6 @@
 /* ======================================
  * https://github.com/adamdehaven/perfect-pullquotes
- * version 1.7.4
+ * version 1.7.5
  *
  * Adam DeHaven ( @adamdehaven )
  * https://adamdehaven.com/
@@ -84,7 +84,7 @@
                     author : 'Adam DeHaven',
                     authorurl : 'https://adamdehaven.com',
                     infourl : 'https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/',
-                    version : '1.7.4'
+                    version : '1.7.5'
             };
         }
     });

@@ -3,7 +3,7 @@
 Plugin Name: Perfect Pullquotes
 Plugin URI:  https://adamdehaven.com/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Description: Add beautifully styled pullquotes to your Wordpress posts
-Version:     1.7.4
+Version:     1.7.5
 Author:      Adam DeHaven
 Author URI:  https://adamdehaven.com/
  */
@@ -11,7 +11,7 @@ add_action( 'wp_enqueue_scripts', 'adamdehaven_perfectpullquote_styles' );
 function adamdehaven_perfectpullquote_styles()
 {
     // Register the style like this for a plugin:
-    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.7', 'all' );
+    wp_register_style( 'perfect-pullquotes-styles', plugins_url( '/perfect-pullquotes.css', __FILE__ ), array(), '1.7.5', 'all' );
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'perfect-pullquotes-styles' );
 }
