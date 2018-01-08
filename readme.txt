@@ -3,8 +3,8 @@ Contributors: adamdehaven
 Donate link: https://adamdehaven.com/blog/2015/05/easily-add-pullquotes-to-your-wordpress-posts-with-my-perfect-pullquotes-plugin/
 Tags: pullquotes, pullquote, pull quotes, pull quote, quotes, quote, blockquotes, blockquote
 Requires at least: 3.0.1
-Tested up to: 4.9
-Stable tag: 1.7.4
+Tested up to: 4.9.1
+Stable tag: 1.7.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,9 @@ After updating the plugin, you may see "ugly" pullquotes until you clear the cac
 2. An example of a left-aligned and right-aligned pullquote. Your pullquotes will vary depending on your font settings, color choices, etc.
 
 == Changelog ==
+
+= 1.7.5 =
+* Fixes bug where pullquote border appears on opposite side from settings. Thanks to (@axinet)[https://github.com/Axinet] for the catch!
 
 = 1.7.4 =
 * Adds `bordertop` attribute that allows moving the pullquote border to the top (above the quote text) when `bordertop="true"` is set on the shortcode. Defaults to `bordertop="false"`.
